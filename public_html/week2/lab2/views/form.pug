@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    <a href="/">Home Page</a>
+    h2= title
+    <form(action="/form", method="post")>
+    div.for-group
+    label(for='name') Name:
+    input(type="text", name="name")
+    div.for-group
+    label(for='email') Email:
+    input(type="text", name="email")
+    div.for-group
+    label(for='comments') Comments:
+    <textarea></textarea>
+    div.for-group
+    input(type="submit")
+    div.for-group
+    <a href="about">About Page</a>
