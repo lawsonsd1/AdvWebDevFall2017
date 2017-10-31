@@ -15,15 +15,9 @@ router.get('/about', function(req, res, next) {
 });
 
 router.post('/form', function(req, res, next) {
-  res.render('form', { title: req.body.name });
-});
-
-router.post('/form', function(req, res, next) {
-  res.render('form', { title: req.body.email });
-});
-
-router.post('/form', function(req, res, next) {
-  res.render('form', { title: req.body.comments });
+  res.render('form', { title: req.body.name },
+                     { title: req.body.email },
+                     { title: req.body.comments });
 });
 
 module.exports = router;
