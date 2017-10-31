@@ -1,0 +1,44 @@
+extends layout
+
+block content
+ h1=title
+ p
+    a(href="../view") View
+ h2=message
+ form(action="/update", method="post", role="form")
+        .form-group
+          label.control-label(for="fistName") First Name:
+          .col
+            input#firstName.form-control(name="firstName" value=results.firstName)
+        .form-group
+        .form-group
+          label.control-label(for="lastName") Last Name:
+          .col
+            input#lastName.form-control(name="lastName" value=results.lastName)
+        .form-group
+          label.control-label(for="department") Department:
+          .col
+            select#department.form-control.input-sm(name="department")
+              option(selected=results.department == "Analyst") Analyst
+              option(selected=results.department == "Networking") Networking
+              option(selected=results.department == "Software") Software
+              option(selected=results.department == "Security") Security
+              option(selected=results.department == "HR") HR
+        .form-group
+        .form-group
+          label.control-label(for="startDate") Start Date:
+          .col
+            input(type="date", name="startDate" value=results.startDate)
+        .form-group
+        .form-group
+          label.control-label(for="jobTitle") Job Title:
+          .col
+            input#jobTitle.form-control(name="jobTitle" value=results.jobTitle)
+        .form-group
+        .form-group
+          label.control-label(for="Salary") Salary:
+          .col
+            input#Salary.form-control(name="Salary" value=results.Salary)
+        .form-group
+        input(type="hidden" name="_id" value=results._id)
+        input(type="submit" value="Add Employee Data") 
