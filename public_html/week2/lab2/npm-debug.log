@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Users\\001398762\\Desktop\\Node\\NodeJSPortable\\App\\NodeJS\\node.exe',
+1 verbose cli   'C:\\Users\\001398762\\Desktop\\Node\\NodeJSPortable\\Data\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'dev:pc' ]
+2 info using npm@3.5.3
+3 info using node@v5.7.0
+4 verbose stack Error: missing script: dev:pc
+4 verbose stack     at run (C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\lib\run-script.js:147:19)
+4 verbose stack     at C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\lib\run-script.js:57:5
+4 verbose stack     at C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\node_modules\read-package-json\read-json.js:345:5
+4 verbose stack     at checkBinReferences_ (C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\node_modules\read-package-json\read-json.js:309:45)
+4 verbose stack     at final (C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\node_modules\read-package-json\read-json.js:343:3)
+4 verbose stack     at then (C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\node_modules\read-package-json\read-json.js:113:5)
+4 verbose stack     at ReadFileContext.<anonymous> (C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\node_modules\read-package-json\read-json.js:284:20)
+4 verbose stack     at ReadFileContext.callback (C:\Users\001398762\Desktop\Node\NodeJSPortable\Data\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:76:16)
+4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:324:13)
+5 verbose cwd C:\Users\001398762\Desktop\Node-Dev-Kit\AdvWebDev\public_html\week2\lab2
+6 error Windows_NT 6.1.7601
+7 error argv "C:\\Users\\001398762\\Desktop\\Node\\NodeJSPortable\\App\\NodeJS\\node.exe" "C:\\Users\\001398762\\Desktop\\Node\\NodeJSPortable\\Data\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev:pc"
+8 error node v5.7.0
+9 error npm  v3.5.3
+10 error missing script: dev:pc
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
