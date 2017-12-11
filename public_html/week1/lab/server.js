@@ -18,6 +18,13 @@ http.createServer(function (request, response) {
     {
         fileName = 'todo.json';
     }
+    
+      if(fileName === 'read-todo')
+    {
+        fileName = 'read-todo.html';
+    }
+    
+    
 
     /* lets try to read the html page found */
     fileSystem.readFile(fileName , callback);
@@ -36,7 +43,7 @@ http.createServer(function (request, response) {
              * HTTP Status: 200 : OK
              * Content Type: text/html 
              */
-            response.writeHead(200, {'Content-Type': 'text/html'}); 
+            response.writeHead(200, {'Content-Type': 'application/json'}); 
             response.write(data.toString());
         }     
         

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Fetch Content</div>
+
+        <script type="text/javascript">
+                      
+            let myRequest = 'http://localhost:3000/todo'
+            
+            fetch(myRequest)
+            .then(function(response) {              
+                  return response.json()               
+            })
+            .then(function(json) { 
+                console.log(json)
+            })
+            
+            
+           
+        </script>
+        
+    </body>
+</html>
