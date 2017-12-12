@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1=title
+    p
+        a(href="../") Home
+    p=removed
+    if results.length
+        table(border="1")
+            thead   
+                tr
+                    th Name
+                    th Phone Number
+                    th Phone Type
+            tbody
+              each contact in results
+                tr
+                    td 
+                        =contact.Name
+                    td 
+                        =contact.phoneNumber
+                    td 
+                        =contact.phoneType
+    else
+        p No results found

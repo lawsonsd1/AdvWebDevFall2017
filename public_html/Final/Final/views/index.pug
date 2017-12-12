@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1=title
+  link(rel='stylesheet', href='/css/style.css')
+  p
+    a(href="./view") View
+  h2=message
+  form.form-horizontal(action="/", method="post", role="form")
+        .form-group
+          label.control-label(for="Name")  Name:
+          .col
+            input#Name.form-control(name="Name")
+        .form-group
+          label.control-label(for="phoneNumber")  Phone Number:
+          .col
+            input#phoneNumber.form-control(name="phoneNumber")
+        .form-group
+          label.control-label(for="phoneType") Phone Type:
+          .col
+            select#phoneType.form-control.input-sm(name="phoneType")
+              option Home
+              option Mobile
+              option Work
+        .form-group
+        input(type="submit" value="Add Contact Data")
+       
